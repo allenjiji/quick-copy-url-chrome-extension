@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "QuickCopy URL",
+    "version": "1.0.0",
+    "description": "Quickly copy the current page URL with a keyboard shortcut",
+    "icons": {
+        "16": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "copy-url": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+L",
+                "mac": "Command+Shift+L"
+            },
+            "description": "Copy current URL to clipboard"
+        }
+    }
+}
